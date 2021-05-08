@@ -1,0 +1,157 @@
+/* fonts */
+@font-face {
+  font-family: "PFDinDisplayPro";
+  font-weight: 400;
+  src:  url('../fonts/PFDinDisplayPro.woff2') format('woff2'),
+        url('../fonts/PFDinDisplayPro.woff') format('woff');
+}
+@font-face {
+  font-family: "PFDinDisplayPro";
+  font-weight: 500;
+  src:  url('../fonts/PFDinDisplayPro-Medium.woff2') format('woff2'),
+        url('../fonts/PFDinDisplayPro-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: "PFDinDisplayPro";
+  font-weight: 700;
+  src:  url('../fonts/PFDinDisplayPro-Bold.woff2') format('woff2'),
+        url('../fonts/PFDinDisplayPro-Bold.woff') format('woff');
+}
+
+/* COMMON STYLE */
+body {
+  font: 16px "PFDinDisplayPro", arial, sans-serif;
+  color: #161616;
+  background-color: #fff;
+}
+.wrap {
+  max-width: 990px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+h1 {
+  color: #657587;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+h2 {
+  color: #b9b1b1;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+h3 {
+  font-size: 42px;
+  text-align: center;
+  margin: 0 0 20px 0;
+  color: #2e2e2e;
+}
+h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 7px 0;
+  color: #2e2e2e;
+}
+.title-line {
+  position: relative;
+}
+.title-line:before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 24px;
+  border: 2px solid #ffca72;
+  display: block;
+  width: 100%;
+}
+.title-line span {
+  background: #fff;
+  position: relative;
+  padding: 0 20px;
+  z-index: 5;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+	content: " ";
+	display: table;
+  clear: both;
+}
+
+/* form elements */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  border: 0;
+  border-radius: 4px;
+  padding: 9px 13px;
+  width: 24%;
+  max-width: 280px;
+  font-size: 17px;
+  line-height: 17px;
+  margin-right: 1.5%;
+  vertical-align: top;
+  float: left;
+  display: block;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+}
+.c-form {
+  background: url(../images/form-bg.png) center top no-repeat;
+  max-width: 767px;
+  min-height: 150px;
+  margin: -70px auto 0;
+  position: relative;
+  padding: 20px 0 30px;
+}
+.c-form form {
+  padding: 0 30px;
+  overflow: hidden;
+  position: relative;
+}
+.c-form-title {
+  color: #fff;
+  font-size: 29px;
+  line-height: 1;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+  padding: 10px 20px 15px; 
+}
+.btn-submit {
+  background-image: linear-gradient(#fff600, #ffc600);
+  border-radius: 6px;
+  border: none;
+  color: #000;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 9px 0px 10px 0px;
+  text-align: center;
+  float: left;
+  display: block;
+  width: 23%;
+  max-width: 280px;
+  box-sizing: border-box;
+}
+.btn-submit:hover {
+  background: #fff600;
+}
+.btn-submit:focus{
+	outline: none;
+}
